@@ -1,9 +1,31 @@
 -- KeyframeSequence Export: Updated Default Dance
--- Generated on 2026-04-02 17:17:26
+-- Generated on 2026-04-02 17:17:local AnimNAME = "Headlock"
 
-local KeyframeSequence = Instance.new("KeyframeSequence")
-KeyframeSequence.Name = "Updated Default Dance"
-local cf=CFrame.new
+local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
+
+if not EmotesAnims then
+    EmotesAnims = Instance.new("Model")
+    EmotesAnims.Name = "EmotesAnims"
+    EmotesAnims.Parent = workspace
+end
+
+local Animations = EmotesAnims:FindFirstChild("Animations")
+
+if not Animations then
+    Animations = Instance.new("Folder")
+    Animations.Name = "Animations"
+    Animations.Parent = EmotesAnims
+end
+
+local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
+
+if not KeyframeSequence then
+    KeyframeSequence = Instance.new("KeyframeSequence")
+    KeyframeSequence.Name = AnimNAME
+    KeyframeSequence.Parent = Animations
+end
+
+local CFrame = CFrame.new
 
 -- Keyframe 1 (Time: 0)
  keyframe1 = Instance.new("Keyframe")
