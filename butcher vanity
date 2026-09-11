@@ -2,12 +2,38 @@
 -- Generated on 2026-04-07 01:27:23
 -- Reverted from: butcher vanity.anim
 
-local KeyframeSequence = Instance.new("KeyframeSequence")
-KeyframeSequence.Name = "Imported Animation Clip"
-local cf=CFrame.new
+12
+
+local AnimNAME = "butcher vanity"
+
+local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
+
+if not EmotesAnims then
+    EmotesAnims = Instance.new("Model")
+    EmotesAnims.Name = "EmotesAnims"
+    EmotesAnims.Parent = workspace
+end
+
+local Animations = EmotesAnims:FindFirstChild("Animations")
+
+if not Animations then
+    Animations = Instance.new("Folder")
+    Animations.Name = "Animations"
+    Animations.Parent = EmotesAnims
+end
+
+local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
+
+if not KeyframeSequence then
+    KeyframeSequence = Instance.new("KeyframeSequence")
+    KeyframeSequence.Name = AnimNAME
+    KeyframeSequence.Parent = Animations
+end
+
+local cf = CFrame.new
 
 -- Keyframe 1 (Time: 0)
-local keyframe1 = Instance.new("Keyframe")
+ keyframe1 = Instance.new("Keyframe")
 keyframe1.Time = 0
 keyframe1.Parent = KeyframeSequence
 
