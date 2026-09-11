@@ -1,17 +1,31 @@
 -- KeyframeSequence Export: Imported Animation Clip
--- Generated on 2025-08-29 20:22:07
+-- Generated on 2025-08-29 20:22:
 
-local EmotesAnims = Instance.new("Model")
-EmotesAnims.Name = "EmotesAnims"
-EmotesAnims.Parent = workspace
+local AnimNAME = "Headlock"
 
-local Emotes = Instance.new("Folder")
-Emotes.Name = "Emotes"
-Emotes.Parent = EmotesAnims
+local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
 
-local KeyframeSequence = Instance.new("KeyframeSequence")
-KeyframeSequence.Name = "Headlock"
-KeyframeSequence.Parent = Emotes
+if not EmotesAnims then
+    EmotesAnims = Instance.new("Model")
+    EmotesAnims.Name = "EmotesAnims"
+    EmotesAnims.Parent = workspace
+end
+
+local Animations = EmotesAnims:FindFirstChild("Animations")
+
+if not Animations then
+    Animations = Instance.new("Folder")
+    Animations.Name = "Animations"
+    Animations.Parent = EmotesAnims
+end
+
+local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
+
+if not KeyframeSequence then
+    KeyframeSequence = Instance.new("KeyframeSequence")
+    KeyframeSequence.Name = AnimNAME
+    KeyframeSequence.Parent = Animations
+end
 
 local CFrame = CFrame.new
 
