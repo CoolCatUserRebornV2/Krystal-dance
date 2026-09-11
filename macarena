@@ -2,9 +2,33 @@
 -- Generated on 2026-04-11 10:03:15
 -- Reverted from: macarena.anim
 
-local KeyframeSequence = Instance.new("KeyframeSequence")
-KeyframeSequence.Name = "macarena"
-local cf=CFrame.new
+local AnimNAME = "macarena"
+
+local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
+
+if not EmotesAnims then
+    EmotesAnims = Instance.new("Model")
+    EmotesAnims.Name = "EmotesAnims"
+    EmotesAnims.Parent = workspace
+end
+
+local Animations = EmotesAnims:FindFirstChild("Animations")
+
+if not Animations then
+    Animations = Instance.new("Folder")
+    Animations.Name = "Animations"
+    Animations.Parent = EmotesAnims
+end
+
+local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
+
+if not KeyframeSequence then
+    KeyframeSequence = Instance.new("KeyframeSequence")
+    KeyframeSequence.Name = AnimNAME
+    KeyframeSequence.Parent = Animations
+end
+
+local CFrame = CFrame.new
 
 -- Keyframe 1 (Time: 0)
 local keyframe1 = Instance.new("Keyframe")
