@@ -27,7 +27,7 @@ if not KeyframeSequence then
     KeyframeSequence.Parent = Animations
 end
 
-local CFrame = CFrame.new
+local cf = CFrame.new
 
 -- Keyframe 1 (Time: 0)
  keyframe1 = Instance.new("Keyframe")
