@@ -2,6 +2,7 @@
 -- Generated on 2026-04-11 10:03:15
 -- Reverted from: macarena.anim
 
+
 local AnimNAME = "macarena"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
@@ -28,10 +29,10 @@ if not KeyframeSequence then
     KeyframeSequence.Parent = Animations
 end
 
-local CFrame = CFrame.new
+local cf = CFrame.new
 
 -- Keyframe 1 (Time: 0)
-local keyframe1 = Instance.new("Keyframe")
+ keyframe1 = Instance.new("Keyframe")
 keyframe1.Time = 0
 keyframe1.Parent = KeyframeSequence
 
