@@ -1,6 +1,8 @@
 -- KeyframeSequence Export: CGirls R6
 -- Generated on 2026-03-15 16:12:12
 
+
+
 local AnimNAME = "CGirls R6"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
@@ -21,17 +23,16 @@ end
 
 local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
 
-if KeyframeSequence then
-    KeyframeSequence:Destroy()
+if not KeyframeSequence then
+    KeyframeSequence = Instance.new("KeyframeSequence")
+    KeyframeSequence.Name = AnimNAME
+    KeyframeSequence.Parent = Animations
 end
 
-KeyframeSequence = Instance.new("KeyframeSequence")
-KeyframeSequence.Name = AnimNAME
-KeyframeSequence.Parent = Animations
+local cf = CFrame.new
 
-local CFrame = CFrame.new
-
-local keyframe1 = Instance.new("Keyframe")
+-- Keyframe 1 (Time: 0)
+ keyframe1 = Instance.new("Keyframe")
 keyframe1.Time = 0
 keyframe1.Parent = KeyframeSequence
 
