@@ -21,16 +21,17 @@ end
 
 local KeyframeSequence = Animations:FindFirstChild(AnimNAME)
 
-if not KeyframeSequence then
-    KeyframeSequence = Instance.new("KeyframeSequence")
-    KeyframeSequence.Name = AnimNAME
-    KeyframeSequence.Parent = Animations
+if KeyframeSequence then
+    KeyframeSequence:Destroy()
 end
 
-local cf = CFrame.new
+KeyframeSequence = Instance.new("KeyframeSequence")
+KeyframeSequence.Name = AnimNAME
+KeyframeSequence.Parent = Animations
 
--- Keyframe 1 (Time: 0)
- keyframe1 = Instance.new("Keyframe")
+local CFrame = CFrame.new
+
+local keyframe1 = Instance.new("Keyframe")
 keyframe1.Time = 0
 keyframe1.Parent = KeyframeSequence
 
