@@ -1,6 +1,8 @@
 -- KeyframeSequence Export: Imported Animation Clip
 -- Generated on 2025-08-29 20:22:
 
+
+
 local AnimNAME = "Headlock"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
@@ -27,10 +29,10 @@ if not KeyframeSequence then
     KeyframeSequence.Parent = Animations
 end
 
-local CFrame = CFrame.new
+local cf = CFrame.new
 
 -- Keyframe 1 (Time: 0)
-local keyframe1 = Instance.new("Keyframe")
+ keyframe1 = Instance.new("Keyframe")
 keyframe1.Time = 0
 keyframe1.Parent = KeyframeSequence
 
