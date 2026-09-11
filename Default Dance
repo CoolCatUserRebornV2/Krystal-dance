@@ -1,5 +1,6 @@
 -- KeyframeSequence Export: Updated Default Dance
--- Generated on 2026-04-02 17:17:local AnimNAME = "Headlock"
+-- Generated on 2026-04-02 17:17:
+local AnimNAME = "Default Dance"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
 
