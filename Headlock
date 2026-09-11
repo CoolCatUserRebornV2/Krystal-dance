@@ -1,9 +1,19 @@
 -- KeyframeSequence Export: Imported Animation Clip
 -- Generated on 2025-08-29 20:22:07
 
+local EmotesAnims = Instance.new("Model")
+EmotesAnims.Name = "EmotesAnims"
+EmotesAnims.Parent = workspace
+
+local Emotes = Instance.new("Folder")
+Emotes.Name = "Emotes"
+Emotes.Parent = EmotesAnims
+
 local KeyframeSequence = Instance.new("KeyframeSequence")
 KeyframeSequence.Name = "Headlock"
-local CFrame=CFrame.new
+KeyframeSequence.Parent = Emotes
+
+local CFrame = CFrame.new
 
 -- Keyframe 1 (Time: 0)
 local keyframe1 = Instance.new("Keyframe")
