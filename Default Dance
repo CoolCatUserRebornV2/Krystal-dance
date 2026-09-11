@@ -1,5 +1,8 @@
 -- KeyframeSequence Export: Updated Default Dance
 -- Generated on 2026-04-02 17:17:
+
+12
+
 local AnimNAME = "Default Dance"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
@@ -26,7 +29,7 @@ if not KeyframeSequence then
     KeyframeSequence.Parent = Animations
 end
 
-local CFrame = CFrame.new
+local cf = CFrame.new
 
 -- Keyframe 1 (Time: 0)
  keyframe1 = Instance.new("Keyframe")
