@@ -2,7 +2,6 @@
 -- Generated on 2025-08-29 20:22:
 
 
-
 local AnimNAME = "Headlock"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
