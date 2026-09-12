@@ -2,7 +2,7 @@
 -- Generated on 2025-08-29 20:17:03
 
 
-local AnimNAME = "114322394064953345"
+local AnimNAME = "Hakari"
 
 local EmotesAnims = workspace:FindFirstChild("EmotesAnims")
 
